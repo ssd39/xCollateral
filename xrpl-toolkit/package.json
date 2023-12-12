@@ -1,0 +1,16 @@
+{
+  "name": "test_prize_oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "starkbank-ecdsa": "^1.1.5",
+    "xrpl": "^2.14.0"
+  }
+}

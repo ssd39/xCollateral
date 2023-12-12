@@ -1,0 +1,53 @@
+{
+    "lockingChain": {
+        "type": "xrp",
+        "nodeUrl": "wss://s.devnet.rippletest.net:51233",
+        "bridgeAccount": "raFzW7HgEMTQcjxStAz2M3XCrUpE6CYYJd",
+        "feePrivateKey": "PRIVATE_KEY",
+        "currency": {
+            "issuer": "rH9WvmWDk7CgcAPM9v8hAGmaVEQACfRa1Q",
+            "currency": "TXT"
+        },
+        "XChainBridge": {
+            "LockingChainDoor": "raFzW7HgEMTQcjxStAz2M3XCrUpE6CYYJd",
+            "LockingChainIssue": {
+                "currency": "TXT",
+                "issuer": "rH9WvmWDk7CgcAPM9v8hAGmaVEQACfRa1Q"
+            },
+            "IssuingChainDoor": "rUCe4MUFvaurCDneJ4iyNXZ9swszNtDS7t",
+            "IssuingChainIssue": {
+                "currency": "TXT",
+                "issuer": "rUCe4MUFvaurCDneJ4iyNXZ9swszNtDS7t"
+            }
+        },
+        "tokenAddress": "rH9WvmWDk7CgcAPM9v8hAGmaVEQACfRa1Q"
+    },
+    "issuingChain": {
+        "type": "evm",
+        "nodeUrl": "https://rpc-evm-sidechain.xrpl.org",
+        "bridgeAccount": "0x337BE5e12E59298a3384F3d8d95AaCE89465A62c",
+        "feePrivateKey": "PRIVATE_KEY",
+        "currency": {
+            "issuer": "0x337BE5e12E59298a3384F3d8d95AaCE89465A62c",
+            "currency": "TXT"
+        },
+        "XChainBridge": {
+            "LockingChainDoor": "0x3fec2f39e32ad951e0113f573736ff500126755a",
+            "LockingChainIssue": {
+                "currency": "TXT",
+                "issuer": "0xb11e527233c77590da06056753dfe24f1cfc6b75"
+            },
+            "IssuingChainDoor": "0x7Ff8622aEE4d28f7848A64BE82c99C30Cbac4D9b",
+            "IssuingChainIssue": {
+                "currency": "TXT",
+                "issuer": "0x7Ff8622aEE4d28f7848A64BE82c99C30Cbac4D9b"
+            }
+        },
+        "tokenAddress": "0xaf09826Fab7224678CfAE325C0FB2340f3454608"
+    },
+    "params": {
+        "minCreateAmount": 20,
+        "signatureReward": 1,
+        "threshold": 1
+    }
+}

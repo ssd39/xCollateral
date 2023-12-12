@@ -1,0 +1,22 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "over collateralized loan on xrpl powered by XRPL EVM sidechain and AMM",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run --network xrpl scripts/deploy-oclprotocol.js",
+    "deploy-price-oracle": "npx hardhat run --network xrpl scripts/deploy-price-oracle.js"
+  },
+  "author": "dwij patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@peersyst/xrp-evm-contracts": "^2.0.0"
+  }
+}

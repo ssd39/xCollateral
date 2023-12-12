@@ -1,0 +1,28 @@
+server:
+  queue_period: 5
+  logging_level: info
+  log_file_path: ./logs/log.txt
+  validate_bridge: true
+  bridge_listener_queue_period: 5
+mainchain:
+  type: xrp
+  node: "wss://s.devnet.rippletest.net:51233"
+  bridge_address: "raFzW7HgEMTQcjxStAz2M3XCrUpE6CYYJd"
+  door_address: "raFzW7HgEMTQcjxStAz2M3XCrUpE6CYYJd"
+  starting_block: 2357720
+  signer_list_seconds: 300
+  signer:
+    type: "local"
+    spec:
+      private_key: "PRIVATE_KEY"
+sidechain:
+  type: evm
+  node: "https://rpc-evm-sidechain.xrpl.org"
+  bridge_address: "0x337BE5e12E59298a3384F3d8d95AaCE89465A62c"
+  door_address: "0x7Ff8622aEE4d28f7848A64BE82c99C30Cbac4D9b"
+  starting_block: 4699170
+  signer_list_seconds: 300
+  signer:
+    type: "local"
+    spec:
+      private_key: "PRIVATE_KEY"

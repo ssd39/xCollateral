@@ -1,0 +1,6 @@
+run:
+    timeout: 5m
+issues:
+    exclude:
+        # Exclude deprecated rule
+        - SA1019

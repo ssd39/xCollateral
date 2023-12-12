@@ -1,0 +1,14 @@
+//create token
+node index.js create-token DDLx 10000 ./issuer.json
+
+//create amm
+node index.js create-amm ./tokens/XRP.json ./tokens/DDL_token.json 1000 10000 ./tokens/DDL_token.json
+
+//amm info
+node index.js amm-info ./tokens/XRP.json ./tokens/DDL_token.json
+
+//create trust line
+node index.js create-trustline ./tokens/TXT_token.json
+
+//mint token
+node index.js mint-token ./tokens/TXT_token.json 1000
